@@ -7,7 +7,7 @@ const creatSut = (name: string, price: number): Product => {
 describe('Product', () => {
   afterEach(() => jest.clearAllMocks());
 
-  it('Product shout be return product', () => {
+  it('Product shout be return propeties name and price', () => {
     const sut = creatSut('T-Shirt', 49.99);
 
     expect(sut).toHaveProperty('name', 'T-Shirt');
